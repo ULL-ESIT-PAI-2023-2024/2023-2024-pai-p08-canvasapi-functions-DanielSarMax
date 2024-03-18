@@ -17,11 +17,26 @@
     "noUnusedLocals": true,                   /* Report errors on unused local variables */
     "forceConsistentCasingInFileNames": true  /* Force all file names to have the same case style */
   },
+  "include": ["src/home-work/**/*"],
   "exclude": [
         "node_modules",
         "build",
         "lib",
         "test",
         "public"
-  ]
+  ],
+  "typedocOptions": {
+    "entryPoints": [
+      "./src/home-work/sqrt/sqrt.ts",
+      "./src/home-work/sin/sin.ts",
+      "./src/home-work/cos/cos.ts",
+      "./src/home-work/exp/exp.ts",
+      "./src/home-work/axis/axis.ts",
+      "./src/home-work/graph/graph.ts",
+      "./src/home-work/grid/grid.ts",
+      "./src/home-work/function/function.ts",
+      "./src/home-work/view/view.ts",
+    ],
+    "out": "docs"
+  }
 }
